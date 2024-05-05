@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="introducaoo">HTML vs XHTML</h1>
+    <h2>HTML versus XHTML</h2>
+    <h3>XHTML é uma versão do HTML mais rígida e baseada em XML.</h3>
+    <h2>O que é XHTML?</h2>
+    <h3><pre>XHTML significa E X tensible Hyper Text Markup Language​​
+XHTML é uma versão de HTML mais rígida e baseada em XML
+XHTML é HTML definido como um aplicativo XML
+XHTML é suportado por todos os principais navegadores</pre></h3>
+<hr>
+    <h2>Por que XHTML?</h2>
+    <h3>XML é uma linguagem de marcação onde todos os documentos devem ser marcados corretamente (ser "bem formados").
+
+        O XHTML foi desenvolvido para tornar o HTML mais extensível e flexível para trabalhar com outros formatos de dados (como XML). Além disso, os navegadores ignoram erros nas páginas HTML e tentam exibir o site mesmo que apresente alguns erros de marcação. Portanto, o XHTML vem com um tratamento de erros muito mais rígido.</h3>
+    <hr>
+
+    <h2>As diferenças mais importantes do HTML</h2>
+    <h3><pre>&lt;!DOCTYPE> é obrigatório
+O atributo xmlns em &lt;html> é obrigatório
+&lt;html>, &lt;head>, &lt;title> e &lt;body> são obrigatórios
+Os elementos devem sempre estar adequadamente aninhados
+Os elementos devem estar sempre fechados
+Os elementos devem estar sempre em letras minúsculas
+Os nomes dos atributos devem estar sempre em letras minúsculas
+Os valores dos atributos devem sempre ser citados
+A minimização de atributos é proibida
+        </pre></h3>
+
+<hr>
+    <h2>XHTML - &lt;!DOCTYPE ....> é obrigatório</h2>
+    <h3>Um documento XHTML deve ter uma declaração XHTML &lt;!DOCTYPE>.
+
+Os elementos &lt;html>, &lt;head>, &lt;title> e &lt;body> também devem estar presentes,<br> e o atributo xmlns em &lt;html> deve especificar o namespace xml do documento.</h3>
+    <div class="container">
+    <div class="editor" contenteditable="false">
+        <h2>Exemplo</h2> 
+        <h3>Aqui está um documento XHTML com um mínimo de tags obrigatórias:</h3>
+        <hr>
+        <pre>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+&lt;html xmlns="http://www.w3.org/1999/xhtml">
+&lt;head>
+&lt;title>Title of document&lt;/title>
+&lt;/head>
+&lt;body>        
+some content here...
+&lt;/body>
+&lt;/html></pre>
+    </div> </div> 
+
+
+    <h2>Elementos XHTML devem ser aninhados corretamente</h2>
+    <h3>Em XHTML, os elementos devem sempre estar adequadamente aninhados uns nos outros, assim:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <h2>Correto:</h2> 
+            <pre>&lt;b>&lt;i>Some text&lt;/i>&lt;/b>&lt;/pre>
+            <h2>Errado:</h2>
+            <pre>&lt;b>&lt;i>Some text&lt;/b>&lt;/i>&lt;/pre>
+    </div> </div>
+    
+    
+
+    <h2>Elementos XHTML devem sempre ser fechados</h2>
+    <h3>Em XHTML, os elementos devem estar sempre fechados, assim:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <h2>Correto:</h2> 
+            <pre>&lt;p>This is a paragraph&lt;/p>
+&lt;p>This is another paragraph&lt;/p></pre>
+            <h2>Errado</h2>
+            <pre>&lt;p>This is a paragraph
+&lt;p>This is another paragraph</pre>
+    </div> </div>
+    
+    
+    <h2>Elementos vazios XHTML devem sempre ser fechados</h2>
+    <h3>Em XHTML, os elementos vazios devem sempre ser fechados, assim:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <h2>Correto:</h2>
+            <pre>A break: &lt;br />
+A horizontal rule: &lt;hr />
+An image: &lt;img src="happy.gif" alt="Happy face" /></pre>
+            <h2>Errado:</h2>
+            <pre>A break: &lt;br>
+A horizontal rule: &lt;hr>
+An image: &lt;img src="happy.gif" alt="Happy face"></pre>
+        </div> </div> 
+
+
+    <h2>Os elementos XHTML devem estar em letras minúsculas</h2>
+    <h3>Em XHTML, os nomes dos elementos devem estar sempre em letras minúsculas, assim:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <h2>Correto:</h2>
+            <pre>&lt;body>
+&lt;p>This is a paragraph&lt;/p>
+&lt;/body></pre>
+            <h2>Errado:</h2>
+            <pre>&lt;BODY>
+&lt;P>This is a paragraph&lt;/P>
+&lt;/BODY>
+&lt;/pre>
+    </div> </div> 
+
+    <h2>Os nomes dos atributos XHTML devem estar em letras minúsculas</h2>
+    <h3>Em XHTML, os nomes dos atributos devem estar sempre em letras minúsculas, assim:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <h2>Correto:</h2>
+            <pre>&lt;a href="https://www.w3schools.com/html/">Visit our HTML tutorial&lt;/a></pre>
+            <h2>Errado:</h2>
+            <pre>&lt;a HREF="https://www.w3schools.com/html/">Visit our HTML tutorial&lt;/a>
+            </pre>
+    </div> </div>
+    
+    <h2>A minimização de atributos XHTML é proibida</h2>
+    <h3>Em XHTML, a minimização de atributos é proibida:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <h2>Correto:</h2>
+            <pre>&lt;input type="checkbox" name="vehicle" value="car" checked="checked" />
+&lt;input type="text" name="lastname" disabled="disabled" /></pre>
+            <h2>Errado:</h2>
+            <pre>&lt;input type="checkbox" name="vehicle" value="car" checked />
+&lt;input type="text" name="lastname" disabled /></pre>
+        </div> </div> 
+        <hr>
+        <br>
+
+    
+</body>
+</html>

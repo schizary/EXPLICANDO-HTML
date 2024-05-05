@@ -4,8 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Charsets</h1>
+    <h2>Codificação HTML (conjuntos de caracteres)</h2>
+    <h3>Para exibir uma página HTML corretamente, um navegador da Web deve saber qual conjunto de caracteres usar.</h3>
+    <h2>O atributo HTML charset</h2>
+    <h3>O conjunto de caracteres é especificado na &lt;meta>tag:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <h2>Exemplo</h2> 
+            <hr>
+            <pre>&lt;meta charset="UTF-8"></pre>
+        </div> </div>
+    <h3>A especificação HTML5 incentiva os desenvolvedores web a usar o conjunto de caracteres UTF-8.
+
+        UTF-8 cobre quase todos os caracteres e símbolos do mundo!</h3>
+    <div class="tabela1"><img src="/imagens/unicode_web.jpg" alt=""></div>
+
+
+
+    <h2>O conjunto de caracteres ASCII</h2>
+    <h3><pre>ASCII foi o primeiro padrão de codificação de caracteres para a web. Definiu 128 caracteres diferentes que poderiam ser usados ​​na internet:
+Letras inglesas (AZ)
+Números (0-9)
+Caracteres especiais como ! $ + - ( ) @ < >.</pre></h3>
+<hr>
+<h2>O conjunto de caracteres ANSI</h2>
+<h3><pre>ANSI (Windows-1252) era o conjunto de caracteres original do Windows:
+Idêntico ao ASCII para os primeiros 127 caracteres
+Caracteres especiais de 128 a 159
+Idêntico ao UTF-8 de 160 a 255</pre></h3>
+
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>&lt;meta charset="Windows-1252"></pre>
+    </div> </div>
+    <hr>
+    <h2>O conjunto de caracteres ISO-8859-1</h2>
+    <h3><pre>ISO-8859-1 era o conjunto de caracteres padrão para HTML 4. Este conjunto de caracteres suportava 256 códigos de caracteres diferentes. HTML 4 também suporta UTF-8.
+
+Idêntico ao ASCII para os primeiros 127 caracteres
+Não usa os caracteres de 128 a 159
+Idêntico a ANSI e UTF-8 de 160 a 255</pre></h3> 
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <h2>Exemplo de HTML 4</h2>
+        <pre>&lt;meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"></pre>
+        <h2>Exemplo de HTML 5</h2>
+        <pre>&lt;meta charset="ISO-8859-1"></pre>
+    </div> </div> 
+
+    <h2>O conjunto de caracteres UTF-8</h2>
+    <h3><pre>é idêntico ao ASCII para os valores de 0 a 127
+Não usa os caracteres de 128 a 159
+Idêntico ao ANSI e 8859-1 de 160 a 255
+Continua do valor 256 até 10.000 caracteres</pre></h3>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>&lt;meta charset="UTF-8"></pre>
+    </div> </div> 
+
+<hr>
     
 </body>
 </html>

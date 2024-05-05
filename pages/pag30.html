@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="introducaoo">HTML Form Attributes</h1>
+    <h2>Atributos do formulário HTML</h2>
+    <h3>Este capítulo descreve os diferentes atributos do &lt;form> elemento HTML.</h3>
+    <h2>O atributo de ação</h2>
+    <h3>O actionatributo define a ação a ser executada quando o formulário for enviado.
+
+Normalmente, os dados do formulário são enviados para um arquivo no servidor quando o usuário clica no botão enviar.
+
+No exemplo abaixo, os dados do formulário são enviados para um arquivo chamado “action_page.php”. Este arquivo contém um script do lado do servidor que trata os dados do formulário:</h3>
+
+<div class="container">
+    <div class="editor" contenteditable="false">
+        <h2>Exemplo:</h2>
+        <h3>Ao enviar, envie os dados do formulário para "gatoss.jpg":</h3>
+        <form action="/imagens/gatoss.jpg">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </form>
+          <hr>           
+        <pre>&lt;form action="/action_page.php">
+&lt;label for="fname">First name:&lt;/label>
+&lt;input type="text" id="fname" name="fname" value="John">
+&lt;label for="lname">Last name:&lt;/label>
+&lt;input type="text" id="lname" name="lname" value="Doe">
+&lt;input type="submit" value="Submit">
+&lt;/form>
+          </pre>
+    </div> </div> 
+
+
+
+
+    <h2>O atributo alvo</h2>
+    <h3>O target atributo especifica onde exibir a resposta recebida após o envio do formulário.
+        O target atributo pode ter um dos seguintes valores:</h3>
+
+        <style>
+            table {
+                width: 100%;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 8px;
+                text-align: left;
+                border-bottom: 1px solid #ddd;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+        <table>
+            <thead>
+                <tr>
+                    <th>Value</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>_blank</td>
+                    <td>The response is displayed in a new window or tab</td>
+                </tr>
+                <tr>
+                    <td>_self</td>
+                    <td>The response is displayed in the current window</td>
+                </tr>
+                <tr>
+                    <td>_parent</td>
+                    <td>The response is displayed in the parent frame</td>
+                </tr>
+                <tr>
+                    <td>_top</td>
+                    <td>The response is displayed in the full body of the window</td>
+                </tr>
+                <tr>
+                    <td>framename</td>
+                    <td>The response is displayed in a named iframe</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+
+
+
+        <h2>O Atributo Método</h2>
+        <h3>O methodatributo especifica o método HTTP a ser usado ao enviar os dados do formulário.
+
+Os dados do formulário podem ser enviados como variáveis ​​​​de URL (com method="get") ou como pós-transação HTTP (com method="post").
+
+O método HTTP padrão ao enviar dados de formulário é GET. </h3>
+<div class="container">
+    <div class="editor" contenteditable="false">
+        <h2>Exemplo</h2> 
+        <h3>Este exemplo usa o método GET ao enviar os dados do formulário:</h3>
+        <pre>&lt;form action="/action_page.php" method="get"></pre>
+        <hr>
+        <h3>Este exemplo usa o método POST ao enviar os dados do formulário:</h3>
+        <pre>&lt;form action="/action_page.php" method="post"></pre>
+    </div> </div> 
+
+    <h2>O atributo de preenchimento automático</h2>
+    <h3>O autocompleteatributo especifica se um formulário deve ter o preenchimento automático ativado ou desativado.
+
+        Quando o preenchimento automático está ativado, o navegador completa automaticamente os valores com base nos valores inseridos anteriormente pelo usuário.</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <h2>Exemplo</h2>
+                <h3>Um formulário com preenchimento automático ativado:</h3>
+                <pre>&lt;form action="/action_page.php" autocomplete="on"></pre>
+            </div> </div> 
+
+
+
+        <h2>O Atributo Novalidate</h2>
+        <h3>O novalidateatributo é um atributo booleano.
+
+            Quando presente, especifica que os dados do formulário (entrada) não devem ser validados quando submetidos.</h3>
+
+            <div class="container">
+                <div class="editor" contenteditable="false">
+                    <H2>Exemplo:</H2> 
+                    <h3>Um formulário com um atributo novalidate:</h3>
+                    <hr>
+                    <pre>&lt;form action="/action_page.php" novalidate></pre>
+                </div> </div> 
+    
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <h1 class="introducaoo">HTML Forms</h1>
+    <h2>Formulários HTML</h2>
+    <h3>Um formulário HTML é usado para coletar a entrada do usuário. A entrada do usuário é geralmente enviada a um servidor para processamento.</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <h2>Exemplo</h2>
+            <form action="/imagens/gatoss.jpg">
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value="John"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                <input type="submit" value="Submit">
+              </form> 
+              
+              <p>If you click the "Submit" button, the form-data will be sent to a page called "/imagens/gatoss.jpg".</p>
+              <hr>
+               
+            <pre>&lt;form action="/action_page.php">
+&lt;label for="fname">First name:&lt;/label><br>
+&lt;input type="text" id="fname" name="fname" value="John">&lt;br>
+&lt;label for="lname">Last name:&lt;/label><br>
+&lt;input type="text" id="lname" name="lname" value="Doe"><br><br>
+&lt;input type="submit" value="Submit">
+&lt;/form> 
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+              </pre>
+        </div> </div>
+
+
+    <h2>O elemento&lt;form></h2>
+    <h3>O elemento HTML &lt;form> é usado para criar um formulário HTML para entrada do usuário:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>&lt;form>
+.
+form elements
+.
+&lt;/form></pre>
+</div> </div>
+
+    <h3>O &lt;form>elemento é um contêiner para diferentes tipos de elementos de entrada, como: campos de texto, caixas de seleção, botões de opção, botões de envio, etc.</h3>
+
+
+
+    <h2>O elemento &lt;entrada></h2>
+    <h3>O elemento HTML &lt;input>é o elemento de formulário mais usado.
+
+        Um &lt;input>elemento pode ser exibido de várias maneiras, dependendo do type atributo.
+        
+        aqui estão alguns exemplos:</h3>
+        <style>
+            table {
+                border-collapse: collapse;
+                width: 100%;
+            }
+            th, td {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            th {
+                background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <h2>Tabela de Tipos de Entrada HTML</h2>
+    
+    <table>
+        <tr>
+            <th>Tipo</th>
+            <th>Descrição</th>
+        </tr>
+        <tr>
+            <td>&lt;input type="texto"></td>
+            <td>Exibe um campo de entrada de texto de linha única</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="rádio"></td>
+            <td>Exibe um botão de opção (para selecionar uma das muitas opções)</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="caixa de seleção"></td>
+            <td>Exibe uma caixa de seleção (para selecionar zero ou mais dentre muitas opções)</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="enviar"></td>
+            <td>Exibe um botão enviar (para enviar o formulário)</td>
+        </tr>
+        <tr>
+            <td>&lt;input type="botão"></td>
+            <td>Exibe um botão clicável</td>
+        </tr>
+    </table>
+
+
+    <h2>Campos de texto</h2>
+    <h3>Define &lt;input type="text">um campo de entrada de linha única para entrada de texto.</h3>
+
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <h2>Exemplo</h2>
+            <h3>Um formulário com campos de entrada para texto:</h3>
+            <pre>&lt;form>
+&lt;label for="fname">First name:&lt;/label><br>
+&lt;input type="text" id="fname" name="fname"><br>
+&lt;label for="lname">Last name:&lt;/label><br>
+&lt;input type="text" id="lname" name="lname">
+&Lt;/form></pre>
+<hr>
+            <h3>É assim que o código HTML acima será exibido em um navegador:</h3>
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname">
+              </form>
+    </div> </div>
+
+
+    <h2>O elemento &lt;label></h2>
+    <h3>Observe o uso do &lt;label>elemento no exemplo acima.
+
+        A &lt;label>tag define um rótulo para muitos elementos do formulário.
+        
+        O &lt;label>elemento é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada.
+        
+        O &lt;label>elemento também ajuda usuários que têm dificuldade em clicar em regiões muito pequenas (como botões de opção ou caixas de seleção) - porque quando o usuário clica no texto dentro do &lt;label>elemento, ele alterna o botão de opção/caixa de seleção.
+        
+        O foratributo da &lt;label>tag deve ser igual ao idatributo do &lt;input> elemento para uni-los.</h3>
+
+    <h2>Botões do rádio</h2>
+    <h3>O &lt;input type="radio">define um botão de opção.
+
+        Os botões de opção permitem que um usuário selecione UMA dentre um número limitado de opções.</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false">
+                <h2>Exemplo</h2> 
+                <h3>Um formulário com botões de opção:</h3>
+                <p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+<hr>
+                <pre>&lt;p>Choose your favorite Web language:&lt;/p>
+
+&lt;form>
+&lt;input type="radio" id="html" name="fav_language" value="HTML">
+&lt;label for="html">HTML&lt;/label><br>
+&lt;input type="radio" id="css" name="fav_language" value="CSS">
+&lt;label for="css">CSS&lt;/label><br>
+&lt;input type="radio" id="javascript" name="fav_language" value="JavaScript">
+&lt;label for="javascript">JavaScript&lt;/label>
+&lt;/form></pre>
+            </div> </div>
+
+
+
+
+            <h2>Caixas de seleção</h2>
+            <h3>O &lt;input type="checkbox">define uma caixa de seleção .
+
+                As caixas de seleção permitem que um usuário selecione ZERO ou MAIS opções de um número limitado de opções.</h3>
+                <div class="container">
+                    <div class="editor" contenteditable="false">
+                        <h2>Exemplo</h2> 
+                        <h3>Um formulário com caixas de seleção:</h3>
+                        <form>
+                            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                            <label for="vehicle1"> I have a bike</label><br>
+                            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                            <label for="vehicle2"> I have a car</label><br>
+                            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                            <label for="vehicle3"> I have a boat</label>
+                          </form>    
+                          <hr>                      
+                        <pre>&lt;form>
+&lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+&lt;label for="vehicle1"> I have a bike&lt;/label><br>
+&lt;input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+&lt;label for="vehicle2"> I have a car<&lt;label><br>
+&lt;input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+&lt;label for="vehicle3"> I have a boat&lt;/label>
+&lt;/form>
+                          </pre>
+                    </div> </div> 
+
+
+
+
+                <h2>O botão Enviar</h2>
+                <h3>O &lt;input type="submit">define um botão para enviar os dados do formulário para um manipulador de formulário.
+
+                    O manipulador de formulário normalmente é um arquivo no servidor com um script para processar dados de entrada.
+                    
+                    O manipulador de formulário é especificado no action atributo do formulário.</h3>
+
+                    <div class="container">
+                        <div class="editor" contenteditable="false">
+                            <h2>Exemplo.</h2>
+                            <h3>Um formulário com um botão enviar:</h3>
+                            <form action="/action_page.php">
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname" value="John"><br>
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                                <input type="submit" value="Submit">
+                              </form>
+                              <hr> 
+                            <pre>&lt;form action="/action_page.php">
+&lt;label for="fname">First name:&lt;/label>
+&lt;input type="text" id="fname" name="fname" value="John">
+&lt;label for="lname">Last name:&lt;/label>
+&lt;input type="text" id="lname" name="lname" value="Doe">
+&lt;input type="submit" value="Submit">
+                              </form></pre>
+                        </div> </div> 
+    
+</body>
+</html>
