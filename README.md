@@ -195,4 +195,12 @@ Foi criado para simplificar e explicar cada parte das funcionalidades do HTML</h
 
 ![Screenshot_37](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/be1aba79-e3b8-40fc-b4ae-3aa22df999b6)
 
+<h1> 🔗 Recursos utilizados</h1>
+<div style="display: inline_block"> <br/>
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/>
+    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
+    <img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white"/>
+  
+</div>
+
 
