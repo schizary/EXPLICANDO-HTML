@@ -7,7 +7,7 @@ Foi criado para simplificar e explicar cada parte das funcionalidades do HTML</h
 <h2>O objetivo principal do site é fornecer informações simples e instruções para auxiliar na criação de códigos HTML, com exemplos práticos.</h2>
 
 <h1>💻Site hospedado e funcionando em app.netlify.com</h1>
-explicandohtml.netlify.app
+<h2>Link do site: https://explicandohtml.netlify.app/</h2>
 
 <h1>📷Imagens do site:</h1>
 <h1>Este setor introduz o site.</h1>
