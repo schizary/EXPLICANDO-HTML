@@ -28,4 +28,15 @@ Neste capítulo mostraremos alguns exemplos básicos de HTML.
 
 
 
-💻HTML Attributes!
+<h1>💻HTML Attributes!</h1>
+<h2>Neste capítulo mostraremos funcionalidades e atributos HTML</h2>
+
+![Screenshot_10](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/56f28293-f9d8-4ac7-a688-54bb8e081953)
+
+
+
+
+<h1>HTML Headings!</h1>
+<h2>Os títulos HTML são títulos ou legendas que você deseja exibir em uma página da web.</h2>
+
+
