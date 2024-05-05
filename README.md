@@ -1,12 +1,12 @@
-💻EXPLICANDO HTML
-Esse site faz parte de um trabalho da FATEC-Desenvolvimento de Software Multiplataforma.
-Foi criado para simplificar e explicar cada parte das funcionalidades do HTML
+<h1>💻EXPLICANDO HTML<h1>
+<h2>Esse site faz parte de um trabalho da FATEC-Desenvolvimento de Software Multiplataforma.
+Foi criado para simplificar e explicar cada parte das funcionalidades do HTML</h2>
 
-📄 Objetivo
+<h1>📄 Objetivo</h1>
 
-O objetivo principal do site é fornecer informações simples e instruções para auxiliar na criação de códigos HTML, com exemplos práticos.
+<h2>O objetivo principal do site é fornecer informações simples e instruções para auxiliar na criação de códigos HTML, com exemplos práticos.</h2>
 
-📷Imagens do site:
+<h1>📷Imagens do site:</h1>
 <h1>Este setor introduz o site.</h1>
 
 ![Screenshot_5](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/ac5b270c-817a-46a9-bda0-fe0751add3ef)
@@ -135,6 +135,67 @@ O objetivo principal do site é fornecer informações simples e instruções pa
 <h2>Explicação com exemplos sobre semânticas e organização HTML.</h2>
 
 ![Screenshot_27](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/467b5fe6-3c91-4967-a0e9-bdf665476d4b)
+
+
+<h1>💻HTML Style Guide</h1>
+<h2>Guia de estilização em HTML e pequena introdução de CSS</h2>
+
+![Screenshot_28](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/cfc18032-e83b-4ae2-9135-6a03a5592c4d)
+
+
+
+<h1>💻HTML Entities</h1>
+<h2>Explicação com exemplos e imagens sobre entidades HTML</h2>
+
+![Screenshot_29](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/6d1c744d-5286-40df-a851-6424f9e7e6a9)
+
+
+<h1>💻HTML Symbols</h1>
+<h2>Explicação com exemplos sobre símbolos HTML</h2>
+
+![Screenshot_30](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/75464bc8-e192-40ef-9d64-aabce4e9767a)
+
+
+<h1>💻HTML Emojis</h1>
+<h2>Explicação exemplificada sobre emotes em HTML</h2>
+
+![Screenshot_31](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/7fe4d0c2-68c6-4939-8bc4-59b94fb4d615)
+
+<h1>💻HTML Charsets</h1>
+<h2>Explicação sobre Conjuntos de caracteres e organização HTML</h2>
+
+![Screenshot_32](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/a0c02c33-77c3-4805-b7a2-014549191f22)
+
+
+<h1>💻HTML URL Encode</h1>
+<h2>Explicando metodos de codificação HTML</h2>
+
+![Screenshot_33](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/e5438ce3-d614-4184-9499-313a6b3dd2d1)
+
+<h1>💻HTML X XHTML</h1>
+<h2>Explicando XHTML e suas diferenças e semelhanças com HTML</h2>
+
+![Screenshot_34](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/965ee76f-0536-481b-86ad-52559bfb1ca3)
+
+
+
+<h1>💻HTML Forms</h1>
+<h2>Explicando com exemplo sobre formulários em HTML e entrada de usuário</h2>
+
+![Screenshot_35](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/5212e7f2-4fd9-4aea-a3ca-8bf2a8efdfd7)
+
+
+<h1>💻HTML Form Attributes</h1>
+<h2>Explicando com exemplo atributos de formulários HTML.</h2>
+
+![Screenshot_36](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/520ac7d8-0dc8-4190-a906-a56e3ea3f0c6)
+
+<h1>💻HTML Form Elements</h1>
+<h2>Explicando com exemplos elementos e funcionalidades de formulários HTML.</h2>
+
+![Screenshot_37](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/be1aba79-e3b8-40fc-b4ae-3aa22df999b6)
+
+
 
 
 
