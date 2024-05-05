@@ -4,8 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/js.js">
 </head>
 <body>
+    <h1 class="introducaoo">HTML JavaScript</h1>
+    <h2>HTML JavaScript</h2>
+    <h3>JavaScript torna as páginas HTML mais dinâmicas e interativas.</h3>
+    <h2>Exemplo</h2>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+<h1>My First JavaScript</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+<hr>
+            <pre>
+&lt;h1>Data e horário JavaScript&lt;/h1>
+
+&lt;button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.&lt;/button>
+                
+&lt;p id="demo">&lt;/p>
+                
+            </pre>
+        </div> </div>
+
+    <h2>A tag HTML &lt;script></h2>
+    <h3>A tag HTML &lt;script> é usada para definir um script do lado do cliente (JavaScript).
+
+        O &lt;script> elemento contém instruções de script ou aponta para um arquivo de script externo por meio do srcatributo.
+        
+        Os usos comuns do JavaScript são manipulação de imagens, validação de formulários e alterações dinâmicas de conteúdo.
+        
+        Para selecionar um elemento HTML, o JavaScript geralmente usa o document.getElementById()método.
+        
+        Este exemplo de JavaScript escreve "Olá JavaScript!" em um elemento HTML com id="demo":</h3>
+    <h2>Exemplo</h2>
+    <hr>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script>
+            </pre>
+        </div> </div>
     
+    <h2>Um gostinho de JavaScript</h2>
+    <h3>Aqui estão alguns exemplos do que o JavaScript pode fazer:</h3>
+    <h2>Exemplo</h2>
+    <h3>JavaScript pode alterar o conteúdo:</h3>
+    <hr>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+                <h1>Meu primeiro JavaScript</h1>
+
+<p>JavaScript can change the content of an HTML element:</p>
+
+<button type="button" onclick="myFunction()">Click Me!</button>
+
+<p id="demo">This is a demonstration.</p>
+
+<script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+</script>
+<hr>
+<pre>
+&lt;h1>My First JavaScript&lt;/h1>
+
+&lt;p>JavaScript can change the content of an HTML element:&lt;/p>
+
+&lt;button type="button" onclick="myFunction()">Click Me!&lt;/button>
+
+&lt;p id="demo">This is a demonstration.&lt;/p>
+
+&lt;script>
+function myFunction() { 
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+&lt;/script>
+
+</pre>
+
+        </div> </div>
+<h2>Exemplo</h2>
+<h3>JavaScript pode alterar estilos:</h3>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>
+            <script>
+                function myFunction() {
+                  document.getElementById("demo").style.fontSize = "25px"; 
+                  document.getElementById("demo").style.color = "blue";
+                  document.getElementById("demo").style.backgroundColor = "yellow";        
+                }
+                </script>
+                
+                <button type="button" onclick="myFunction()">Click Me!</button>
+        </pre>
+    </div> </div>
+
+<h3>JavaScript pode alterar atributos:</h3>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>
+            <h1>troca de imagens javascript</h1>
+            
+            <script>
+            function light(sw) {
+              var pic;
+              if (sw == 0) {
+                pic = "/imagens/gatoss.jpg"
+              } else {
+                pic = "/imagens/gato2.jpg"
+              }
+              document.getElementById('myImage').src = pic;
+            }
+            </script>
+            
+            <img id="myImage" src="/imagens/gatoss.jpg" width="300" height="300">
+            
+            <p>
+            <button type="button" onclick="light(1)">gato1</button>
+            <button type="button" onclick="light(0)">gato2</button>
+            </p>
+        </pre>
+    </div> </div>
+
+    <h2>A tag HTML &lt;noscript></h2>
+    <h3>A tag HTML &lt;noscript> define um conteúdo alternativo a ser exibido aos usuários que possuem scripts desabilitados em seus navegadores ou possuem um navegador que não suporta scripts:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <p id="demo"></p>
+            <script>
+            document.getElementById("demo").innerHTML = "Hello JavaScript!";
+            </script>           
+            <noscript>Sorry, your browser does not support JavaScript!</noscript>
+            <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+            <pre>
+            <hr>
+&lt;p id="demo">&lt;/p>
+&lt;script>
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+&lt;/script>           
+&lt;noscript>Sorry, your browser does not support JavaScript!&lt;/noscript>
+&lt;p>A browser without support for JavaScript will show the text written inside the noscript element.&lt;/p>
+            </pre>
+        </div> </div>
+
+
+
+
 </body>
 </html>

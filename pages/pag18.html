@@ -4,8 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    
+    <h1 class="introducaoo">HTML Id</h1>   
+    <h2>Atributo de identificação HTML</h2> 
+    <h3>O atributo HTML idé usado para especificar um ID exclusivo para um elemento HTML.
+
+        Você não pode ter mais de um elemento com o mesmo id em um documento HTML.</h3> <br>
+    <h2>Usando o atributo id</h2>
+    <h3>O atributo id especifica um ID exclusivo para um elemento HTML. O valor do id atributo deve ser exclusivo no documento HTML.
+
+        O idatributo é usado para apontar para uma declaração de estilo específica em uma folha de estilos. Também é usado por JavaScript para acessar e manipular o elemento com o id específico.
+        
+        A sintaxe para id é: escreva um caractere hash (#), seguido por um nome de id. Em seguida, defina as propriedades CSS entre chaves {}.
+        
+        No exemplo a seguir temos um &lt;h1>elemento que aponta para o nome do id “myHeader”. Este &lt;h1> elemento será estilizado de acordo com a #myHeader definição de estilo na seção head:</h3>
+
+    <h2>Exemplo</h2>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <head>
+                <style>
+                #myHeader {
+                  background-color: lightblue;
+                  color: black;
+                  padding: 10px;
+                  text-align: center;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <h1 id="myHeader">My Header</h1>
+                
+                </body>
+                <hr>
+            <pre>
+&lt;head>
+&lt;style>
+#myHeader {
+background-color: lightblue;
+color: black;
+padding: 10px;
+text-align: center;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+&lt;h1 id="myHeader">My Header&lt;/h1>            
+&lt;/body>
+            </pre>
+
+        </div> </div>
+
+
+    <h2>Diferença entre classe e ID</h2>
+    <h3>Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome de id deve ser usado apenas por um elemento HTML dentro da página:</h3>
+    <h2>Exemplo</h2>
+    <hr>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <style>
+                /* Style the element with the id "myHeader" */
+                #myHeader {
+                  background-color: lightblue;
+                  color: black;
+                  padding: 40px;
+                  text-align: center;
+                }
+                
+                /* Style all elements with the class name "city" */
+                .city {
+                  background-color: tomato;
+                  color: white;
+                  padding: 10px;
+                }
+                </style>
+                
+                <!-- An element with a unique id -->
+                <h1 id="myHeader">My Cities</h1>
+                
+                <!-- Multiple elements with same class -->
+                <h2 class="city">London</h2>
+                <p>London is the capital of England.</p>
+                
+                <h2 class="city">Paris</h2>
+                <p>Paris is the capital of France.</p>
+                
+                <h2 class="city">Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+                <hr>
+            <pre>
+&lt;style>
+/* Style the element with the id "myHeader" */
+#myHeader {
+background-color: lightblue;
+color: black;
+padding: 40px;
+text-align: center;
+}
+                    
+/* Style all elements with the class name "city" */
+.city {
+background-color: tomato;
+color: white;
+padding: 10px;
+}
+&lt;/style>
+                    
+<!-- An element with a unique id -->
+&lt;h1 id="myHeader">My Cities&lt;/h1>
+                    
+<!-- Multiple elements with same class -->
+&lt;h2 class="city">London&lt;/h2>
+&lt;p>London is the capital of England.&lt;/p>
+                    
+&lt;h2 class="city">Paris&lt;/h2>
+&lt;p>Paris is the capital of France.&lt;/p>
+                    
+&lt;h2 class="city">Tokyo&lt;/h2>
+&lt;p>Tokyo is the capital of Japan.&lt;/p>
+            </pre>
+        </div> </div>
+
+
+        <h2>Marcadores HTML com ID e links</h2>
+        <h3>Os marcadores HTML são usados ​​para permitir que os leitores acessem partes específicas de uma página da web. <br>
+
+            Os marcadores podem ser úteis se a sua página for muito longa. <br>
+            
+            Para usar um marcador, você deve primeiro criá-lo e depois adicionar um link a ele. <br>
+            
+            Então, quando o link for clicado, a página rolará até o local com o marcador. <br></h3>
+        
+        <h2>Exemplo</h2>
+        <h3>Primeiro, crie um marcador com o idatributo:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;h2 id="C4">Chapter 4&lt;/h2>
+                </pre>
+            </div> </div>
+        <h3>Em seguida, adicione um link para o marcador ("Pular para o Capítulo 4"), na mesma página:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;a href="#C4">Jump to Chapter 4&lt;/a>
+                </pre>
+            </div> </div>
+        <h3>Ou adicione um link ao marcador ("Pular para o Capítulo 4"), de outra página:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;a href="html_demo.html#C4">Jump to Chapter 4&lt;/a>
+                </pre>
+            </div> </div>
+
+
+
+
+        <h2>Usando o atributo id em JavaScript</h2>
+        <h3>O idatributo também pode ser usado por JavaScript para realizar algumas tarefas para aquele elemento específico.
+
+            JavaScript pode acessar um elemento com um ID específico com o getElementById()método:</h3>
+            <h2>Exemplo</h2>
+            <h3>Use o idatributo para manipular texto com JavaScript:</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre>
+&lt;script>
+function displayResult() {
+document.getElementById("myHeader").innerHTML = "Have a nice day!";
+}
+&lt;/script>
+                    </pre>
+                </div> </div>
+                <hr>
+
+
+        
 </body>
 </html>

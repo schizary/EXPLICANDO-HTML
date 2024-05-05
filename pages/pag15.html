@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Block and Inline</h1>
+    <h2>Bloco HTML e elementos embutidos</h2>
+    <h3>Cada elemento HTML possui um valor de exibição padrão, dependendo do tipo de elemento.
+
+        Os dois valores de exibição mais comuns são bloco e embutido.</h3>
+    <h2>Elementos em nível de bloco</h2>
+    <h3><pre>Um elemento em nível de bloco sempre começa em uma nova linha e os navegadores adicionam automaticamente algum <br>espaço (uma margem) antes e depois do elemento.
+
+        Um elemento de nível de bloco sempre ocupa toda a largura disponível <br>(estende-se para a esquerda e para a direita tanto quanto possível).
+        
+        Dois elementos de bloco comumente usados ​​são: &lt;p> e &lt;div>.
+        
+        O &lt;p>elemento define um parágrafo em um documento HTML.
+        
+        O &lt;div>elemento define uma divisão ou seção em um documento HTML.</h3></pre>
+        <h3 class="bloco">O elemento &lt;p> é um elemento de nível de bloco.</h3>
+        <h3 class="bloco">O elemento &lt;div> é um elemento de nível de bloco.</h3>
     
+    <h2>Elementos embutidos</h2>
+    <h3>Um elemento embutido não começa em uma nova linha.
+
+        Um elemento embutido ocupa apenas a largura necessária.
+        
+        Este é um elemento <span style="border: 1px solid white;">span</span> dentro de um parágrafo.</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;span style="border: 1px solid white;">span&lt;/span>
+                </pre>
+            </div> </div>
+
+    
+    <h2>O elemento &lt;div></h2>
+    <h3>O &lt;div>elemento é frequentemente usado como contêiner para outros elementos HTML. <br>
+
+        O &lt;div>elemento não possui atributos obrigatórios, mas style, classe idsão comuns. <br>
+        
+        Quando usado junto com CSS, o &lt;div>elemento pode ser usado para estilizar blocos de conteúdo:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                    <div style="background-color:black;color:white;padding:20px;">
+                        <h2>London</h2>
+                        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+                      </div>
+                      <pre>
+                        <hr>
+&lt;div style="background-color:black;color:white;padding:20px;">
+    &lt;h2>London&lt;/h2>
+    &lt;p>London is the capital city of England. It is the most populous city in the United Kingdom, <br>with a metropolitan area of over 13 million    inhabitants.&lt;/p>
+&lt;/div>
+                      </pre>
+            </div> </div>
+
+    <h2>O elemento &lt;span></h2>
+    <h3>O &lt;span>elemento é um contêiner embutido usado para marcar uma parte de um texto ou parte de um documento.
+
+        O &lt;span>elemento não possui atributos obrigatórios, mas style, classe idsão comuns.
+        
+        Quando usado junto com CSS, o &lt;span>elemento pode ser usado para estilizar partes do texto:</h3>
+    <h3>Exemplo</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+                <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+                <hr>
+&lt;p>My mother has &lt;span style="color:blue;font-weight:bold;">blue&lt;/span> eyes and my father has &lt;span <br>style="color:darkolivegreen;
+ font-weight:bold;">dark green&lt;/span> eyes.&lt;/p>
+            </pre>
+        </div> </div>
+
 </body>
 </html>

@@ -3,9 +3,439 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>style guide</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Style Guide</h1>
+<h2>Guia de estilo HTML</h2>
+<h3>Um código HTML consistente, limpo e organizado torna mais fácil para outras pessoas lerem e compreenderem seu código.
+
+    Aqui estão algumas diretrizes e dicas para criar um bom código HTML.</h3>
+    <h2>Sempre declarar o tipo de documento</h2>
+    <h3>Sempre declare o tipo de documento como a primeira linha do seu documento.
+
+        O tipo de documento correto para HTML é:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;!DOCTYPE html>
+                </pre>
+            </div> </div>
+
+    <h2>Use nomes de elementos em letras minúsculas</h2>
+    <h3><pre>
+HTML permite misturar letras maiúsculas e minúsculas nos nomes dos elementos.
+
+No entanto, recomendamos usar nomes de elementos em letras minúsculas porque:
+        
+Misturar nomes maiúsculos e minúsculos parece ruim
+Os desenvolvedores normalmente usam nomes em minúsculas
+Letras minúsculas parecem mais limpas
+Letras minúsculas são mais fáceis de escrever</pre></h3>
+<h2>Bom:</h2>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>
+&lt;body>
+    &lt;p>This is a paragraph.&lt;/p>
+&lt;/body>
+        </pre>
+    </div> </div>
+<h2>Ruim:</h2>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>
+&lt;BODY>
+    &lt;P>This is a paragraph.&lt;/P>
+&lt;/BODY>
+        </pre>
+    </div> </div>
+    <h2>Fechar todos os elementos HTML</h2>
+    <h3>Em HTML, você não precisa fechar todos os elementos (por exemplo, o &lt;p>elemento).
+
+        No entanto, recomendamos fortemente fechar todos os elementos HTML, assim:</h3>
+    <h2>Bom:</h2>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;section>
+    &lt;p>This is a paragraph.&lt;/p>
+    &lt;p>This is a paragraph.&lt;/p>
+&lt;/section>
+            </pre>
+        </div> </div>
+        <h2>Ruim:</h2>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;section>
+&lt;p>This is a paragraph.
+&lt;p>This is a paragraph.
+&lt;/section>           
+                </pre>
+            </div> </div>
+
+        <h2>Use nomes de atributos em letras minúsculas</h2>
+        <h3><pre>
+HTML permite misturar letras maiúsculas e minúsculas em nomes de atributos.
+No entanto, recomendamos usar nomes de atributos em letras minúsculas porque:        
+Misturar nomes maiúsculos e minúsculos parece ruim
+Os desenvolvedores normalmente usam nomes em minúsculas
+Letras minúsculas parecem mais limpas
+Letras minúsculas são mais fáceis de escrever</pre></h3>
+<h2>Bom:</h2>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>
+&lt;a href="https://www.w3schools.com/html/">Visit our HTML tutorial&lt;/a>
+        </pre>
+        <h2>Ruim:</h2>
+        <pre>
+&lt;a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+        </pre>
+    </div> </div> 
+    <h2>Sempre citar valores de atributos</h2>
+    <h3><pre>
+HTML permite valores de atributos sem aspas.
+
+No entanto, recomendamos citar valores de atributos porque:
+        
+Os desenvolvedores normalmente citam valores de atributos
+Os valores citados são mais fáceis de ler
+Você DEVE usar aspas se o valor contiver espaços</pre></h3>
+<h2>Bom:</h2>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <pre>
+&lt;table class="striped">
+        </pre>
+    <h2>Ruim:</h2>
+&lt;table class="striped">&lt;/table>
+        <h2>Muito ruim:</h2>
+&lt;table class="striped">&lt;/table>
+    </div> </div>
+
+
+
+    <h2>Sempre especifique alt, largura e altura para imagens</h2> 
+    <h3>Sempre especifique o altatributo para imagens. Este atributo é importante se a imagem, por algum motivo, não puder ser exibida.
+
+        Além disso, sempre defina o widthe heightdas imagens. Isso reduz a oscilação, pois o navegador pode reservar espaço para a imagem antes de carregá-la.</h3>
+        <hr>
+        <h2>Bom</h2>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+                </pre>
+                <h2>Ruim:</h2>
+                <hr>
+&lt;img src="html5.gif">
+</div> </div> 
+<h2>Espaços e sinais de igual</h2>
+<h3>HTML permite espaços em torno de sinais de igual. Mas sem espaço é mais fácil de ler e agrupa melhor as entidades.</h3>
+<hr>
+<div class="container">
+    <div class="editor" contenteditable="false"> 
+        <h2>Bom</h2>
+        <pre>
+&lt;link rel="stylesheet" href="styles.css">
+        </pre>
+        <h2>Ruim:</h2>
+        <pre>&lt;link rel = "stylesheet" href = "styles.css"></pre>
+    </div> </div> 
+
+<h2>Evite longas linhas de código</h2>
+<h3>Ao usar um editor HTML, NÃO é conveniente rolar para a direita e para a esquerda para ler o código HTML.
+Tente evitar linhas de código muito longas.</h3>
+<hr>
+<h2>Linhas em branco e recuo</h2>
+<h3>Não adicione linhas em branco, espaços ou recuos sem motivo.
+
+Para facilitar a leitura, adicione linhas em branco para separar blocos de código grandes ou lógicos.
+
+Para facilitar a leitura, adicione dois espaços de recuo. Não use a tecla Tab.
+
+</h3>
+<div class="container">
+    <div class="editor" contenteditable="false">
+        <h2>Bom</h2> 
+        <pre>&lt;body>
+
+&lt;h1>Famous Cities&lt;/h1>
+            
+&lt;h2>Tokyo&lt;/h2>
+&lt;p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous <br>metropolitan area in the world.&lt;/p>
+
+&lt;h2>London&lt;/h2>
+&lt;p>London is the capital city of England. It is the most populous city in the United Kingdom.&lt;/p>
+            
+&lt;h2>Paris</h2>
+&Lt;p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.&lt;/p>
+            
+&lt;/body></pre>
+<h2>Ruim:</h2>
+<pre>
+&lt;body>
+&lt;h1>Famous Cities&lt;/h1>
+&lt;h2>Tokyo&lt;/h2><p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.&lt;/p>
+&lt;h2>London&lt;/h2>&lt;p>London is the capital city of England. It is the most populous city in the United Kingdom.&lt;/p>
+&lt;h2>Paris&lt;/h2>&lt;p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.&lt;/p>
+&lt;/body></pre>
+
+<h2>Bom exemplo de mesa:</h2>
+<pre>&lt;table>
+    &lt;tr>
+      &lt;th>Name&lt;/th>
+      &lt;th>Description&lt;/th>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>A&lt;/td>
+      &lt;td>Description of A&lt;/td>
+    &lt;/tr>
+    &lt;tr>
+      &lt;td>B&lt;/td>
+      &lt;td>Description of B&lt;/td>
+    &lt;/tr>
+  &lt;/table></pre>
+  <h2>Bom exemplo de lista:</h2>
+  <pre>&lt;ul>
+    &lt;li>London&lt;/li>
+    &lt;li>Paris&lt;/li>
+    &lt;li>Tokyo&lt;/li>
+  &lt;/ul></pre>
+    </div> </div>
+
+
+    <h2>Nunca pule o elemento &lt;title></h2>
+    <h3>O &lt;title>elemento é obrigatório em HTML.
+
+        O conteúdo do título de uma página é muito importante para a otimização de mecanismos de pesquisa (SEO)! O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar as páginas nos resultados da pesquisa.
+        
+        O &lt;title>elemento:
+        
+        define um título na barra de ferramentas do navegador
+        fornece um título para a página quando ela é adicionada aos favoritos
+        exibe um título para a página nos resultados do mecanismo de pesquisa
+        Portanto, tente tornar o título o mais preciso e significativo possível: </h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>&lt;title>HTML Style Guide and Coding Conventions&lt;/title></pre>
+            </div> </div> 
+
+        <h2>Omitindo &lt;html> e &lt;body>?</h2>
+        <h3>Uma página HTML será validada sem as tags &lt;html>e &lt;body>:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>&lt;!DOCTYPE html>
+&lt;head>
+&lt;title>Page Title&lt;/title>
+&lt;/head>
+                    
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p></pre>
+<h3>No entanto, é altamente recomendável sempre adicionar as tags &lt;html>e &lt;body>!
+
+    A omissão &lt;body>pode produzir erros em navegadores mais antigos.
     
+    Omitir &lt;html>e &lt;body> também pode travar o software DOM e XML.</h3>
+            </div> </div> 
+            <h2>Omitindo &lt;head>?</h2>
+            <h3>A tag HTML &lt;head> também pode ser omitida.
+
+                Os navegadores adicionarão todos os elementos antes de &lt;body>, a um &lt;head> elemento padrão.</h3>
+            <h2>Exemplo</h2>
+            <hr>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre>&lt;!DOCTYPE html>
+&lt;html>
+&lt;title>Page Title&lt;/title>
+&lt;body>
+                        
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p>
+                        
+&lt;/body>
+&lt;/html> </pre>
+<h3>No entanto, recomendamos usar a &lt;head> tag.</h3>
+            </div> </div>
+            
+            
+
+
+
+            <h2>Fechar elementos HTML vazios</h2>
+            <h3>Em HTML, é opcional fechar elementos vazios.</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false">
+                    <h2>Permitido:</h2> 
+                    <pre>&lt;meta charset="utf-8"></pre>
+                    <h2>Também permitido:</h2>
+                    <pre>&lt;meta charset="utf-8" /></pre>
+                    <hr>
+                    <h3>Se você espera que o software XML/XHTML acesse sua página, mantenha a barra de fechamento (/), pois ela é obrigatória em XML e XHTML.</h3>
+                </div> </div> 
+
+
+
+
+            <h2>Adicione o atributo lang</h2>
+            <h3>Você deve sempre incluir o langatributo dentro da &lt;html> tag, para declarar o idioma da página web. O objetivo é ajudar os mecanismos de pesquisa e navegadores.</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <h2>Exemplo</h2>
+                    <pre>
+&lt;!DOCTYPE html>
+&lt;html lang="en-us">
+&lt;head>
+&lt;title>Page Title&lt;/title>
+&lt;/head>
+&lt;body>
+                        
+&lt;h1>This is a heading&lt;/h1>
+&lt;p>This is a paragraph.&lt;/p>
+                        
+&lt;/body>
+&lt;/html>pre>
+            </div> </div> 
+
+
+            <h2>Metadados</h2>
+            <h3>Para garantir a interpretação adequada e a indexação correta do mecanismo de pesquisa, tanto o idioma quanto a codificação de caracteres devem ser definidos o mais cedo possível em um documento HTML:&lt;meta charset="charset"></h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre>&lt;!DOCTYPE html>
+&lt;html lang="en-us">
+&lt;head>
+&lt;meta charset="UTF-8">
+&lt;title>Page Title&lt;/title>
+&lt;/head></pre>
+                </div> </div> 
+
+            
+            
+            <h2>Configurando a janela de visualização</h2>
+            <h3>A janela de visualização é a área visível do usuário em uma página da web. Varia de acordo com o dispositivo – será menor em um telefone celular do que na tela de um computador.
+
+                Você deve incluir o seguinte &lt;meta>elemento em todas as suas páginas da web:</h3>
+                <div class="container">
+                    <div class="editor" contenteditable="false"> 
+                        <pre>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"></pre>
+                    </div> </div> 
+
+            <h3>Isso fornece instruções ao navegador sobre como controlar as dimensões e o dimensionamento da página.
+
+                A width=device-widthparte define a largura da página para seguir a largura da tela do dispositivo (que varia dependendo do dispositivo).
+                
+                A initial-scale=1.0parte define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador.
+                
+                Aqui está um exemplo de uma página da web sem a meta tag da janela de visualização e a mesma página da web com a meta tag da janela de visualização:</h3>
+
+
+
+            <h2>Comentários HTML</h2>
+            <h3>Comentários curtos devem ser escritos em uma linha, assim:</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre><p style="color: chartreuse;">&lt;!-- This is a comment --&gt;</p></pre>
+                </div> </div>
+            <h3>Comentários que ocupam mais de uma linha devem ser escritos assim:</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre><p style="color: chartreuse;">&lt;!--
+This is a long comment example. This is a long comment example.
+This is a long comment example. This is a long comment example.
+--&gt;</p></pre>
+<hr>
+<h3>Comentários longos são mais fáceis de observar se forem recuados com dois espaços.</h3>
+                </div> </div>
+                
+                
+
+
+            <h2>Usando folhas de estilo</h2>
+            <h3>Use sintaxe simples para vincular folhas de estilo (o typeatributo não é necessário):</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre>&lt;link rel="stylesheet" href="styles.css"></pre>
+
+
+                    <h3>Regras CSS curtas podem ser escritas compactadas, assim:</h3>
+                    <pre>p.intro {font-family:Verdana;font-size:16em;}</pre>
+                    <h3>Regras CSS longas devem ser escritas em várias linhas:</h3>
+                    <pre>body {
+background-color: lightgrey;
+font-family: "Arial Black", Helvetica, sans-serif;
+font-size: 16em;
+color: black;
+}</pre>
+                </div> </div>
+            <h3><pre>Coloque o suporte de abertura na mesma linha do seletor
+Use um espaço antes do colchete de abertura
+Use dois espaços de recuo
+Use ponto e vírgula após cada par propriedade-valor, incluindo o último
+Use aspas apenas em valores se o valor contiver espaços
+Coloque o colchete de fechamento em uma nova linha, sem espaços iniciais
+                </pre></h3>
+
+
+
+            
+            <h2>Carregando JavaScript em HTML</h2>
+            <h3>Use sintaxe simples para carregar scripts externos (o typeatributo não é necessário):</h3>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre>&lt;script src="myscript.js"></pre>
+                </div> </div>
+                
+                
+
+
+            <h2>Acessando elementos HTML com JavaScript</h2>
+            <h3>Usar código HTML "desarrumado" pode resultar em erros de JavaScript.
+
+                Estas duas instruções JavaScript produzirão resultados diferentes:</h3>
+            <h2>Exemplo</h2>
+            <div class="container">
+                <div class="editor" contenteditable="false"> 
+                    <pre>getElementById("Demo").innerHTML = "Hello";
+
+getElementById("demo").innerHTML = "Hello";</pre>
+            </div> </div>
+            
+            
+
+            <h2>Use nomes de arquivos em minúsculas</h2>
+            <h3>Alguns servidores web (Apache, Unix) diferenciam maiúsculas de minúsculas em relação aos nomes de arquivos: "london.jpg" não pode ser acessado como "London.jpg".
+
+                Outros servidores web (Microsoft, IIS) não diferenciam maiúsculas de minúsculas: "london.jpg" pode ser acessado como "London.jpg".
+                
+                Se você usar uma mistura de letras maiúsculas e minúsculas, deve estar ciente disso.
+                
+                Se você passar de um servidor que não diferencia maiúsculas de minúsculas para um que diferencia maiúsculas de minúsculas, mesmo pequenos erros danificarão sua web!
+                
+                Para evitar esses problemas, use sempre nomes de arquivos em letras minúsculas!</h3>
+                <hr>
+            <h2>Extensões de arquivo</h2>
+            <h3><pre>Os arquivos HTML devem ter uma extensão .html ( .htm é permitido).
+
+Os arquivos CSS devem ter uma extensão .css .
+                
+Os arquivos JavaScript devem ter uma extensão .js .</pre></h3>
+            <hr>
+            <h2>Diferenças entre .htm e .html</h2>
+            <h3>Não há diferença entre as extensões de arquivo .htm e .html!
+
+                Ambos serão tratados como HTML por qualquer navegador e servidor web.</h3>
+                <hr>
+            <h2>Nomes de arquivos padrão</h2>
+            <h3>Quando uma URL não especifica um nome de arquivo no final (como "https://www.w3schools.com/"), o servidor apenas adiciona um nome de arquivo padrão, como "index.html", "index.htm", " default.html" ou "default.htm".
+
+                Se o seu servidor estiver configurado apenas com "index.html" como nome de arquivo padrão, seu arquivo deverá ser denominado "index.html" e não "default.html".
+                
+                Entretanto, os servidores podem ser configurados com mais de um nome de arquivo padrão; normalmente você pode configurar quantos nomes de arquivos padrão desejar.</h3>
+            <hr>
 </body>
 </html>

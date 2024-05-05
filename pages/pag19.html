@@ -4,8 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Iframes</h1>
+    <h2>Iframes HTML</h2>
+    <h3>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.</h3>
+    <h2>Sintaxe HTML Iframe</h2>
+    <h3>A tag HTML &lt;iframe> especifica um quadro embutido.
+
+        Um quadro embutido é usado para incorporar outro documento no documento HTML atual.</h3>
+    <h2>Exemplo</h2>
+    <hr>
+    <iframe src="/index.html" title="site"></iframe>
+    <hr>
+    <h2>Iframe - Definir Altura e Largura</h2>
+    <h3>Use os atributos heighte widthpara especificar o tamanho do iframe.
+
+        A altura e a largura são especificadas em pixels por padrão:</h3>
+    <h2>Exemplo</h2>
+    <hr>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+<iframe src="/index.html" height="200" width="100%" title="Iframe Example"></iframe>
+            <pre>
+&lt;iframe src="demo_iframe.htm" height="200" width="100%" title="Iframe Example">&lt;/iframe>
+            </pre>
+        </div> </div>
+
+    <h2>Iframe - Remover a borda</h2>
+    <h3>Por padrão, um iframe possui uma borda ao seu redor. <br>
+        Para remover a borda, adicione o styleatributo e use a borderpropriedade CSS:</h3>
+    <h2>Exemplo</h2>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+<iframe src="/index.html" style="border:none;" title="Iframe Example" width="100%"></iframe>
+<hr>
+&lt;iframe src="/index.html" style="border:none;" title="Iframe Example">&lt;/iframe>
+            </pre>
+        </div> </div>
+
+    <h2>Iframe - Alvo para um Link</h2>
+    <h3>Um iframe pode ser usado como quadro de destino para um link.
+
+        O targetatributo do link deve referir-se ao nameatributo do iframe:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false">
+                <iframe src="/index.html" name="iframe_a" title="Iframe Example" width="100%"></iframe>
+                <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools.com</a></p>
+                <hr>
+                <pre>
+&lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example">&lt;/iframe>
+
+&lt;p>&lt;a href="https://www.w3schools.com" target="iframe_a">W3Schools.com&lt;/a>&lt;/p>
+                </pre>
+            </div> </div>
+            <hr>
+
     
 </body>
 </html>

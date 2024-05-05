@@ -4,8 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Attributes</h1>
+    <h2>Atributos HTML    </h2>
+    <h3>Todos os elementos HTML podem ter atributos <br>
+        Os atributos fornecem informações adicionais sobre os elementos <br>
+        Os atributos são sempre especificados na tag inicial <br>
+        Os atributos geralmente vêm em pares nome/valor como: nome="valor"</h3>
+
+    <h2>O atributo href</h2>
+    <h3>A &lt;a>tag define um hiperlink. O hrefatributo especifica o URL da página para a qual o link leva:</h3>
+
+
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;a href="https://www.w3schools.com">Visit W3Schools&lt;/a>
+<h3>exemplo</h3>
+<a href="https://www.w3schools.com">Visit W3Schools</a>
+            </pre>
+
+        </div> </div>
+
+     <h2>O atributo src</h2>
+     <h3>A &lt;img> tag é usada para incorporar uma imagem em uma página HTML. O atributo src especifica o caminho para a imagem a ser exibida:</h3>
+     <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;img src="gatoss.jpg">
+                <h3>exemplo</h3>
+<img src="/imagens/gatoss.jpg">
+            </pre> </div> </div>
+
+    <h3>Existem duas maneiras de especificar o URL no src atributo: <br> <br>
+
+        1. URL absoluta – Links para uma imagem externa hospedada em outro site. Exemplo: src="https://www.w3schools.com/images/img_girl.jpg" . <br>
+        
+        Notas: Imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; ele pode ser removido ou alterado repentinamente. <br> <br>
+        
+        2. URL relativo - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem barra, será relativo à página atual. Exemplo: src="img_girl.jpg". Se o URL começar com uma barra, será relativo ao domínio. Exemplo: src="/images/img_girl.jpg". <br>
+        
+        Dica: quase sempre é melhor usar URLs relativos. Eles não serão quebrados se você mudar de domínio.</h3>
+    
+    <h2>Os atributos de largura e altura</h2>
+    <h3>A &lt;img>tag também deve conter os atributos widthe height, que especificam a largura e a altura da imagem (em pixels):</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;img src="gatoss.jpg" width="300" height="100">
+                <h3>exemplo</h3>
+<img src="/imagens/gatoss.jpg" width="300" height="100">
+            </pre> </div> </div>
+        
+        
+
+    <h2>O atributo alternativo</h2>
+    <h3>altO atributo obrigatório para a &lt;img> tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, a um erro no srcatributo ou ao usuário usar um leitor de tela.</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;img src="img_girl.jpg" alt="Girl with a jacket">
+            </pre> </div> </div>
+
+
+    <h2>O atributo de estilo</h2>
+    <h3>O styleatributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;p style="color:red;">This is a red paragraph.</p>
+                <h3>exemplo</h3>
+<p style="color:red;">This is a red paragraph.</p>
+            </pre> </div> </div>
+
+    
+    <h2>O atributo lang</h2>
+    <h3>Você deve sempre incluir o langatributo dentro da <html>tag, para declarar o idioma da página web. O objetivo é ajudar os mecanismos de pesquisa e navegadores.
+
+        O exemplo a seguir especifica o inglês como idioma:</h3>
+        <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;!DOCTYPE html>
+&lt;html lang="en">
+&lt;body>
+...
+&lt;/body>
+&lt;/html>
+            </pre> </div> </div>
+    <h3>Os códigos de país também podem ser adicionados ao código do idioma no lang atributo. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país, como en-US ou pt-BR.</h3>
+
+
+    <h2>O atributo do título</h2>
+    <h3>O title atributo define algumas informações extras sobre um elemento.
+
+        O valor do atributo title será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</h3>
+        <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;p title="I'm a tooltip">This is a paragraph.</p>
+<h3>exemplo</h3>
+<p title="I'm a tooltip">This is a paragraph.</p>
+            </pre> </div> </div>
+
+
+    <h2>Aspas simples ou duplas?</h2>
+    <h3>Aspas duplas em torno de valores de atributos são as mais comuns em HTML, mas aspas simples também podem ser usadas.
+
+        Em algumas situações, quando o próprio valor do atributo contém aspas duplas, é necessário utilizar aspas simples:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;p title='John "ShotGun" Nelson'>
+                <h3>ou</h3>
+&lt;p title="John 'ShotGun' Nelson">
+
+            </pre> </div> </div>
+
+
+
+
+
+
     
 </body>
 </html>

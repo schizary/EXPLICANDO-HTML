@@ -4,8 +4,307 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Div</h1>
+    <h2>Elemento HTML Div</h2>
+    <h3>O &lt;div>elemento é usado como contêiner para outros elementos HTML.</h3>
+    <h3>O &lt;div>elemento é por padrão um elemento de bloco, o que significa que ocupa toda a largura disponível e vem com quebras de linha antes e depois.</h3>
+    <h2>Exemplo</h2>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+Lorem Ipsum 
+<div class="exemplin">I am a div</div>
+dolor sit amet.
+<hr>
+Lorem Ipsum &lt;div>I am a div&lt;/div> dolor sit amet.
+        </div> </div>
+
+
+    <h2>&lt;div> como um contêiner</h2>
+    <h3>O &lt;div>elemento é frequentemente usado para agrupar seções de uma página da web.</h3>
+    <h2>Exemplo</h2>
+    <h3>Um elemento &lt;div> com elementos HTML:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+                <div class="exemplin">
+                    <h2>London</h2>
+                    <p>London is the capital city of England.</p>
+                    <p>London has over 13 million inhabitants.</p>
+                  </div>
+                  <hr>
+                  <pre>
+&lt;div>
+    &lt;h2>London&lt;/h2>
+    &lt;p>London is the capital city of England.&lt;/p>
+    &lt;p>London has over 13 million inhabitants.&lt;/p>
+&lt;/div>
+                  </pre>
+        </div> </div>
+
+    <h2>Alinhar ao centro um elemento &lt;div></h2>
+    <h3>Se você tiver um &lt;div> elemento que não tenha 100% de largura e quiser alinhá-lo centralmente, defina a marginpropriedade CSS como auto.</h3>
+    <h2>Exemplo</h2>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;style>
+    div {
+        width:300px;
+        margin:auto;
+    }
+&lt;/style>
+            </pre>
+            <hr>
+            <h3>Resultado:</h3>
+            <div class="exemplo2">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+            </div>
+
+        </div> </div>
+        <h2>Vários elementos &lt;div></h2>
+    <h3>Você pode ter muitos &lt;div>contêineres na mesma página.</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+<pre>
+&lt;div>
+    &lt;h2>London</h2>
+    &lt;p>London is the capital city of England.</p>
+    &lt;p>London has over 13 million inhabitants.</p>
+&lt;/div>
+&lt;div>
+    &lt;h2>Oslo</h2>
+    &lt;p>Oslo is the capital city of Norway.</p>
+    &lt;p>Oslo has over 600.000 inhabitants.</p>
+&lt;/div>
+&lt;div>
+    &lt;h2>Rome</h2>
+    &lt;p>Rome is the capital city of Italy.</p>
+    &lt;p>Rome has almost 3 million inhabitants.</p>
+&lt;/div>                  
+</pre>
+<hr>
+<h3>Resultado</h3>
+
+<div style="background-color:#833f00;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 13 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#68006b;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 600.000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#003514;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has almost 3 million inhabitants.</p>
+  </div>
+        </div> </div>
+
+    <h2>Alinhando elementos &lt;div> lado a lado</h2>
+    <h3>Ao construir páginas da web, muitas vezes você deseja ter dois ou mais &lt;div>elementos lado a lado.</h3>
+    <h3>Existem diferentes métodos para alinhar elementos lado a lado, todos incluem alguns estilos CSS. Veremos os métodos mais comuns:</h3>
+    <h2>Flutuador</h2>
+    <h3>A floatpropriedade CSS não foi originalmente criada para alinhar &lt;div> elementos lado a lado, mas tem sido usada para esse propósito há muitos anos.</h3>
+    <h3>A propriedade CSS floaté usada para posicionar e formatar conteúdo e permite que os elementos flutuem próximos uns dos outros em vez de uns sobre os outros.</h3>
+    <h2>Exemplo</h2>
+    <style>
+        div.mycontainer {
+        margin-left: 10%;
+          justify-content: center;
+          width:80%;
+          overflow:auto;
+        }
+        div.mycontainer div {
+          width:33%;  
+          float:left;
+        }
+        </style>
+        <body>
+        
+        <div class="mycontainer">
+        
+          <div style="background-color:#833f00;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div style="background-color:#68006b;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div style="background-color:#003514;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+          </div>
+        
+        </div>
+
+    <h2>Bloco embutido</h2>
+    <h3>Se você alterar a propriedade &lt;div>do elemento de para , os elementos não adicionarão mais uma quebra de linha antes e depois e serão exibidos lado a lado em vez de um em cima do outro.displayblockinline-block&lt;div></h3>
+    <h2>Exemplo</h2>
+    <h3>Como usar display: inline-block para alinhar elementos div lado a lado:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;style>
+    div {
+    width: 30%;
+    display: inline-block;
+}
+&lt;/style>
+            </pre>
+        </div> </div>
+        <h3>Resultado</h3>
+        <style>
+            .colores{
+            margin-left: 10%;
+              justify-content: center;
+              width:30%;  
+              display:inline-block;
+              
+            }
+            </style>
+            <body>
+            
+            <div style="background-color:#833f00;"class='colores'>
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#68006b;"class='colores'>
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#003514;"class='colores'>
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+
+
+    <h2>Flexível</h2>
+    <h3>O CSS Flexbox Layout Module foi introduzido para facilitar o design de uma estrutura de layout responsiva e flexível sem usar float ou posicionamento.
+        Para fazer o método CSS flex funcionar, envolva os &LT;div>elementos com outro &LT;div>elemento e dê a ele o status de flex container.</h3>
+    <h2>Exemplo</h2>
+    <h3>Como usar o flex para alinhas elementos div lado a lado</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;style>
+    .mycontainer {
+        display: flex;
+    }
+    .mycontainer > div {
+        width:33%;
+    }
+&lt;/style>
+            </pre>
+
+        </div> </div>
+
+    <h3>Resultado</h3>
+    <style>
+        .mycontainer {
+          display: flex;
+        }
+        .mycontainer > div {
+          width:33%;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="mycontainer">
+        
+          <div style="background-color:#FFF4A3;">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div style="background-color:#FFC0C7;">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div style="background-color:#D9EEE1;">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million.</p>
+          </div>
+        
+        </div>
+
+
+    <h2>Grade</h2>
+    <h3>O Módulo CSS Grid Layout oferece um sistema de layout baseado em grade, com linhas e colunas, facilitando o design de páginas web sem a necessidade de usar flutuadores e posicionamento. <br>
+        Parece quase igual a flex, mas tem a capacidade de definir mais de uma linha e posicionar cada linha individualmente. <br>
+        O método de grade CSS requer que você envolva os &lt;div>elementos com outro &lt;div>elemento e forneça o status de contêiner de grade, e você deve especificar a largura de cada coluna.</h3>
+    <h2>Exemplo</h2>
+    <h3>Como usar a grade para alinhar elementos &lt;div> lado a lado:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;style>
+.grid-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+&lt;/style>
+            </pre>
+        </div> </div>
+    <h3>Resultado</h3>
+    <hr>
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 33% 33% 33%;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <div class="grid-container">
+        
+        <div style="background-color:#FFF4A3;">
+          <h2>London</h2>
+          <p>London is the capital city of England.</p>
+          <p>London has over 13 million inhabitants.</p>
+        </div>
+        
+        <div style="background-color:#FFC0C7;">
+          <h2>Oslo</h2>
+          <p>Oslo is the capital city of Norway.</p>
+          <p>Oslo has over 600.000 inhabitants.</p>
+        </div>
+        
+        <div style="background-color:#D9EEE1;">
+          <h2>Rome</h2>
+          <p>Rome is the capital city of Italy.</p>
+          <p>Rome has almost 3 million inhabitants.</p>
+        </div>
+        
+        </div>
+        
+      
+    
+    
     
 </body>
 </html>

@@ -3,9 +3,131 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>html elements</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Elements</h1>
+
+    <h2>Elementos HTML</h2>
+    <h3>O elemento HTML é tudo, desde a tag inicial até a tag final:</h3>
+    <h3><pre>&lt;tagname>O conteúdo vai aqui...&lt;/tagname></pre></h3>
+    <h2>Exemplos de alguns elementos em HTML</h2>
+    <h3><pre>&lt;h1>Meu primeiro título&lt;/h1></pre></h3>
+    <h3><pre>&lt;p>Meu primeiro parágrafo&lt;/p></pre></h3>
+
+
+
+    <h2>Elementos HTML aninhados</h2>
+    <h3>Os elementos HTML podem ser aninhados (isso significa que os elementos podem conter outros elementos).
+
+        Todos os documentos HTML consistem em elementos HTML aninhados.
+        
+        O exemplo a seguir contém quatro elementos HTML ( , &lt;html>e ) :&lt;body>&lt;h1>&lt;p>&lt;/h3>
+    
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+<pre>&lt;!DOCTYPE html>
+    &lt;html>
+    &lt;body>
+                
+    &lt;h1>My First Heading&lt;/h1>
+    &lt;p>My first paragraph.&lt;/p>
+                
+    &lt;/body>
+    &lt;/html></pre>
+    <h3>NA PRÁTICA</h3>
+    <h1>My First Heading</h1>
+    <p>My first paragraph.</p>
+            </div> </div>
+
+    <h2>Exemplo explicado</h2>
+    <h3>O &lt;html>elemento é o elemento raiz e define todo o documento HTML.
+
+        Possui uma tag inicial &lt;html>e uma tag final &lt;/html>.
+        
+        Então, dentro do &lt;html>elemento existe um &lt;body> elemento:</h3>
+
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;body>
+     &lt;h1>My First Heading&lt;/h1>
+    &lt;p>My first paragraph.&lt;/p>            
+&lt;/body>
+                </pre>
+                    
+            </div> </div>
+
+    <H3>O &lt;body>elemento define o corpo do documento.
+
+        Possui uma tag inicial &lt;body>e uma tag final &lt;/body>.
+        
+        Então, dentro do &lt;body>elemento existem outros dois elementos: &lt;h1>e &lt;p>:</H3>
+
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;h1>My First Heading&lt;/h1>
+&lt;p>My first paragraph.&lt;/p>            
+                </pre>
+                    
+            </div> </div>
+    <h3><pre>
+O &lt;h1>elemento define um título.
+
+Possui uma tag inicial &lt;h1>e uma tag final &lt;/h1>,
+
+e o &lt;p>elemento define um parágrafo.
+
+ o elemento &lt;p> possui uma tag inicial &lt;p>e uma tag final &lt;/p>:</pre></h3>
+
+
+
+
+
+        <h2>Nunca pule a tag final</h2>
+        <h3>Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+&lt;html>
+    &lt;body>
+                        
+     &lt;p>This is a paragraph
+     &lt;p>This is a paragraph
+                        
+    &lt;/body>
+&lt;/html>        
+                </pre>
+            <h3>No entanto, nunca confie nisso! Resultados inesperados e erros podem ocorrer se você esquecer a tag final!            </h3>
+                    
+            </div> </div>
+    <h3>
+
+
+
+
+
+    <h2>Elementos HTML vazios</h2>
+    <h3>Elementos HTML sem conteúdo são chamados de elementos vazios.A &lt;br>tag define uma quebra de linha e é um elemento vazio sem tag de fechamento:</h3>
+
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+&lt;p>This is a &lt;br> paragraph with a line break&lt;/p> 
+
+<p>This is a <br>paragraph with a line break</p>
+            </pre>
+                
+        </div> </div>
+
+    <h2>HTML não diferencia maiúsculas de minúsculas</h2>
+    <h3>As tags HTML não diferenciam maiúsculas de minúsculas: <P>significa o mesmo que <p>
+
+        O padrão HTML não exige tags em minúsculas, mas o W3C recomenda letras minúsculas em HTML e exige letras minúsculas para tipos de documentos mais rígidos, como XHTML.</h3>
+    
+
     
 </body>
 </html>

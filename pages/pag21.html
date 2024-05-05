@@ -4,8 +4,400 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Semantics</h1>
+    <h2>Elementos Semânticos HTML</h2>
+    <h3>Elementos semânticos = elementos com significado.</h3>
+    <h2>O que são elementos semânticos?</h2>
+    <h3>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.
+        Exemplos de elementos não semânticos : &lt;div>e &lt;span>- Não diz nada sobre o seu conteúdo.
+        Exemplos de elementos semânticos &lt;form> : , &lt;table>, e &lt;article>- Define claramente seu conteúdo.</h3>
+    <h2>Elementos Semânticos em HTML</h2>
+    <h3>Muitos sites contêm código HTML como: &lt;div id="nav"> &lt;div class="header"> &lt;div id="footer"> para indicar navegação, cabeçalho e rodapé.
+
+        Em HTML existem alguns elementos semânticos que podem ser usados ​​para definir diferentes partes de uma página web:  </h3>
+    <h3 st><pre>
+&lt;artigo>
+&lt;à parte>
+&lt;detalhes>
+&lt;figcaption>
+&lt;figura>
+&lt;rodapé>
+&lt;cabeçalho>
+&lt;principal>
+&lt;marca>
+&lt;navegação>
+&lt;seção>
+&lt;resumo>
+&lt;tempo>
+</pre></h3>
+        <h2>Elemento HTML &lt;seção></h2>
+    <h3>O &lt;section>elemento define uma seção em um documento.
+
+        De acordo com a documentação HTML do W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um título."
+        
+        Exemplos de onde um &lt;section>elemento pode ser usado:</h3>
+    <h3><pre>
+Capítulos
+Introdução
+Novos itens
+Informações de contato</pre></h3>
+        <h3>Uma página da web normalmente pode ser dividida em seções para introdução, conteúdo e informações de contato.</h3>
+    <h2>Exemplo</h2>
+    <h3>Duas seções em um documento:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <section>
+                <h1>WWF</h1>
+                <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+                </section>
+                
+                <section>
+                <h1>WWF's Panda symbol</h1>
+                <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+            </section> 
+            <pre>
+                <hr>
+&lt;section>
+    &lt;h1>WWF&lt;/h1>
+    &lt;p>The World Wide Fund for Nature (WWF) is an international organization working on issues <br>regarding the conservation, research and restoration of   the environment, formerly named <br>the World Wildlife Fund. WWF was founded in 1961.&lt;/p>
+&lt;/section>
+                    
+&lt;section>
+    &lt;h1>WWF's Panda symbol&lt;/h1>
+    &lt;p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from <br>a panda named Chi Chi that was transferred from the  Beijing Zoo to the London Zoo in the same <br>year of the establishment of WWF.&lt;/p>
+&lt;/section>
+            </pre>
+        </div> </div>
+
+    <h2>Elemento HTML &lt;article></h2>
+    <h3>O &lt;article>elemento especifica conteúdo independente e independente.
+
+        Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site.
+        
+        Exemplos de onde o &lt;article>elemento pode ser usado:</h3>
+    <h3><pre>
+Postagens no fórum
+Postagens no blog
+Comentários do usuário
+Cartões de produto
+Artigos de jornal</pre></h3>
+<h2>Exemplo</h2>
+<h3>Três artigos com conteúdo independente e independente:</h3>
+<div class="container">
+    <div class="editor" contenteditable="false">
+        <article>
+            <h2>Google Chrome</h2>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </article>
+            
+            <article>
+            <h2>Mozilla Firefox</h2>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+            </article>
+            
+            <article>
+            <h2>Microsoft Edge</h2>
+            <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+        </article> 
+        <pre>
+        <hr>
+        <article>
+&lt;h2>Google Chrome</h2>
+&lt;p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's <br>most popular web browser today!</p>
+&lt;/article>
+            
+&lt;article>
+&lt;h2>Mozilla Firefox</h2>
+&lt;p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second <br>most popular web browser since January, 2018.</p>
+&lt;/article>
+            
+&lt;article>
+&lt;h2>Microsoft Edge</h2>
+&lt;p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge <br>replaced Internet Explorer.</p>
+&lt;/article>
+        </pre>
+    </div> </div>
+
+    <h2>Exemplo 2</h2>
+    <h3>Use CSS para estilizar o elemento &lt;article>:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <style>
+                .all-browsers {
+                  margin: 0;
+                  padding: 5px;
+                  background-color: lightgray;
+                }
+                
+                .all-browsers > h1, .browser {
+                  margin: 10px;
+                  padding: 5px;
+                }
+                
+                .browser {
+                  background: white;
+                }
+                
+                .browser > h2, p {
+                  margin: 4px;
+                  font-size: 90%;
+                }
+                </style>
+                </head>
+                <body>
+                
+                <article class="all-browsers">
+                  <h1>Most Popular Browsers</h1>
+                  <article class="browser">
+                    <h2>Google Chrome</h2>
+                    <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                  </article>
+                  <article class="browser">
+                    <h2>Mozilla Firefox</h2>
+                    <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                  </article>
+                  <article class="browser">
+                    <h2>Microsoft Edge</h2>
+                    <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                  </article>
+                </article>    
+                <hr>             
+            <pre>
+&lt;style>
+.all-browsers {
+margin: 0;
+padding: 5px;
+background-color: lightgray;
+}
+                    
+.all-browsers > h1, .browser {
+margin: 10px;
+padding: 5px;
+}
+                    
+.browser {
+background: white;
+}
+                    
+.browser > h2, p {
+margin: 4px;
+font-size: 90%;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+
+&lt;article class="all-browsers">
+&lt;h1>Most Popular Browsers</h1>
+&lt;article class="browser">
+&lt;h2>Google Chrome</h2>
+&lt;p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is <br> the world's most popular web browser today!</p>
+&lt;/article>
+&lt;article class="browser">
+&lt;h2>Mozilla Firefox</h2>
+&lt;p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been <br>the second most popular web browser since January, 2018.</p>
+&lt;/article>
+&lt;article class="browser">
+&lt;h2>Microsoft Edge</h2>
+&lt;p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. <br>Microsoft Edge replaced Internet Explorer.</p>
+&lt;/article>
+                    </article>  
+            </pre>
+        </div> </div>
+
+    <h2>Aninhando &lt;article> em &lt;section> ou vice-versa?</h2>
+    <h3>O &lt;article> elemento especifica conteúdo independente e independente. <br>
+
+        O &lt;section>elemento define a seção em um documento. <br>
+        
+        Podemos usar as definições para decidir como aninhar esses elementos? Não nós não podemos! <br>
+        
+        Assim, você encontrará páginas HTML com &lt;section>elementos contendo &lt;article> elementos e <br> &lt;article>elementos contendo &lt;section>elementos.</h3>
+
+    <h2>Elemento HTML &lt;header></h2>
+    <h3>O &lt;header>elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.
+
+        Um &lt;header>elemento normalmente contém:
+        
+        um ou mais elementos de título (&lt;h1> - &lt;h6>)
+        logotipo ou ícone
+        informações de autoria
+        Nota: Você pode ter vários &lt;header>elementos em um documento HTML. No entanto, &lt;header>não pode ser colocado dentro de um &lt;footer>ou &lt;address>outro &lt;header>elemento.</h3>
+    <h2>Exemplo</h2>
+    <h3>Um cabeçalho para um &lt;article>: </h3>
+    <div class="container">
+        <div class="editor" contenteditable="false">
+            <article>
+                <header>
+                  <h1>What Does WWF Do?</h1>
+                  <p>WWF's mission:</p>
+                </header>
+                <p>WWF's mission is to stop the degradation of our planet's natural environment,
+                and build a future in which humans live in harmony with nature.</p>
+              </article> 
+              <hr>
+            <pre>
+&lt;article>
+&lt;header>
+&lt;h1>What Does WWF Do?&lt;/h1>
+&lt;p>WWF's mission:&lt;/p>
+&lt;/header>
+&lt;p>WWF's mission is to stop the degradation of our planet's natural environment,
+and build a future in which humans live in harmony with nature.&lt;/p>
+&lt;/article> 
+            </pre>
+        </div> </div>
+
+    <h2>Elemento HTML &lt;footer></h2>
+    <h3><pre>
+O &lt;footer>elemento define um rodapé para um documento ou seção.
+
+Um &lt;footer>elemento normalmente contém:
+        
+informações de autoria
+Informações sobre direitos autorais
+informações de contato
+Mapa do site
+voltar ao topo links
+documentos relacionados
+Você pode ter vários &lt;footer>elementos em um documento.</pre></h3>
+<h2>Exemplo</h2>
+<h3>Uma seção de rodapé em um documento:</h3>
+<div class="container">
+    <div class="editor" contenteditable="false">
+        <footer>
+            <p>Author: Hege Refsnes</p>
+            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+          </footer> 
+          <hr>
+        <pre>
+&lt;footer>
+&lt;p>Author: Hege Refsnes&lt;/p>
+&lt;p>&lt;a href="mailto:hege@example.com">hege@example.com&lt;/a>&lt;/p>
+&lt;/footer>
+        </pre>
+    </div> </div>
+    <h2>Elemento HTML &lt;nav></h2>
+    <h3>O &lt;nav> elemento define um conjunto de links de navegação.</h3>
+    <h2>Exemplo</h2>
+    <h3>Um conjunto de links de navegação:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <nav>
+                <a href="/html/">HTML</a> |
+                <a href="/css/">CSS</a> |
+                <a href="/js/">JavaScript</a> |
+                <a href="/jquery/">jQuery</a>
+              </nav>
+            <pre>
+&lt;nav>
+&lt;a href="/html/">HTML&lt;/a> |
+&lt;a href="/css/">CSS&lt;/a> |
+&lt;a href="/js/">JavaScript&lt;/a> |
+&lt;a href="/jquery/">jQuery&lt;/a>
+&lt;/nav>
+            </pre>
+        </div> </div>
+
+    <h2>Elemento HTML &lt;aside></h2>
+    <h3>O &lt;aside>elemento define algum conteúdo além daquele em que está colocado (como uma barra lateral).
+        O &lt;aside>conteúdo deve estar indiretamente relacionado ao conteúdo circundante.</h3>
+    <h2>Exemplo</h2>
+    <h3>Exibir algum conteúdo além do conteúdo em que está colocado:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+            <aside>
+            <h4>Epcot Center</h4>
+            <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+            </aside>
+            <hr>
+            <pre>
+&lt;p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing!
+I had a great summer together with my family!</p>
+&lt;aside>
+&lt;h4>Epcot Center</h4>
+&lt;p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions,
+international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+            </pre>
+        </div> </div>
+
+        <h2>Exemplo 2</h2>
+        <h3>Use CSS para estilizar o elemento &lt;aside>:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <style>
+                    aside {
+                      width: 30%;
+                      padding-left: 15px;
+                      margin-left: 15px;
+                      float: right;
+                      font-style: italic;
+                      background-color: rgb(68, 1, 1);
+                    }
+                    </style>
+                    </head>
+                    <body>
+                    
+                    <p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+                    
+                    <aside>
+                    <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+                    </aside>
+                    <hr>
+                <pre>
+&lt;style>
+aside {
+width: 30%;
+padding-left: 15px;
+margin-left: 15px;
+float: right;
+font-style: italic;
+background-color: lightgray;
+}
+&lt;/style>
+&lt;/head>
+&lt;body>
+                        
+&lt;p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! 
+I had a great summer together with my family!</p>
+                        
+&lt;aside>
+&lt;p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, 
+international pavilions, award-winning fireworks and seasonal special events.</p>
+&lt;/aside>
+                </pre>
+            </div> </div>
+            <h2>Elementos HTML &lt;figure> e &lt;figcaption></h2>
+            <h3>A &lt;figure>tag especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de códigos, etc.
+
+                A &lt;figcaption>tag define uma legenda para um &lt;figure> elemento. O &lt;figcaption>elemento pode ser colocado como o primeiro ou o último filho de um &lt;figure>elemento.
+                
+                O &lt;img>elemento define a imagem/ilustração real. </h3>
+                <h2>Exemplo</h2>
+                <div class="container">
+                    <div class="editor" contenteditable="false">
+                        <figure>
+                            <img src="/imagens/gato2.jpg" alt="Trulli" style="height: 100px;">
+                            <figcaption>Fig1. - Trulli, Puglia, Italy.</figcaption>
+                          </figure> 
+                    <hr>
+                    <pre>
+&lt;figure>
+&lt;img src="/imagens/gato2.jpg" alt="Trulli" style="height: 100px;">
+&lt;figcaption>Fig1. - Trulli, Puglia, Italy.&lt;/figcaption>
+&lt;/figure> 
+                    </pre>
+                    </div> </div>
+            <h2>Por que elementos semânticos?</h2>
+            <h3>De acordo com o W3C: “Uma Web semântica permite que os dados sejam compartilhados e reutilizados entre aplicações, empresas e comunidades”.</h3>
+            <hr>
     
+
 </body>
 </html>

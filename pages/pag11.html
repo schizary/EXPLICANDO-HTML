@@ -4,8 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
+    <h1 class="introducaoo">HTML Links</h1>
+    <h2>Links HTML</h2>
+    <h3>Links são encontrados em quase todas as páginas da web. Os links permitem que os usuários cliquem de uma página para outra.</h3>
+    <h2>Hiperlinks</h2>
+    <h3>Links HTML são hiperlinks.
+Você pode clicar em um link e ir para outro documento.
+Quando você move o mouse sobre um link, a seta do mouse se transforma em uma pequena mão. <br>
+<ins>Nota: Um link não precisa ser texto. Um link pode ser uma imagem ou qualquer outro elemento HTML!</ins></h3>
+
+    <h2>Links HTML - Sintaxe</h2>
+    <h3>A tag HTML &lt;a>define um hiperlink. Possui a seguinte sintaxe:</h3>
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">clica ae prof</a>
+&lt;a href="url">link text</a>
+            </pre>
+        </div> </div>
+
+
+    <h3>O atributo mais importante do &lt;a> elemento é o hrefatributo, que indica o destino do link.
+
+        O texto do link é a parte que ficará visível ao leitor.
+        
+        Clicar no texto do link enviará o leitor ao endereço URL especificado.</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+<a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+&lt;a href="https://www.w3schools.com/">Visit W3Schools.com!&lt;/a>
+                </pre>
+            </div> </div>
+    <h3>Por padrão, os links aparecerão da seguinte forma em todos os navegadores: <br>
+
+        Um link não visitado está sublinhado e azul <br>
+        Um link visitado está sublinhado e roxo <br>
+        Um link ativo está sublinhado e vermelho</h3>
+
+    
+
+
+    <h2>Links HTML - O atributo de destino</h2>
+    <h3>Por padrão, a página vinculada será exibida na janela atual do navegador. Para alterar isso, você deve especificar outro destino para o link. <br>
+
+O targetatributo especifica onde abrir o documento vinculado. <br>
+        
+O targetatributo pode ter um dos seguintes valores: <br>
+        
+_self- Padrão. Abre o documento na mesma janela/aba em que foi clicado <br>
+_blank- Abre o documento em uma nova janela ou guia <br>
+_parent- Abre o documento no quadro pai <br>
+_top- Abre o documento em todo o corpo da janela</h3>
+    <h3>Exemplo</h3>
+
+    <div class="container">
+        <div class="editor" contenteditable="false"> 
+            <pre>
+<a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+&lt;a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!&lt;/a>
+            </pre>
+        </div> </div>
+
+
+
+    
+    <h2>URLs absolutos versus URLs relativos</h2>
+    <h3>Ambos os exemplos acima usam um URL absoluto (um endereço da web completo) no hrefatributo.
+
+        Um link local (um link para uma página dentro do mesmo site) é especificado com um URL relativo (sem a parte “https://www”):</h3>
+
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+                    <h2>Absolute URLs</h2>
+                    <p><a href="https://www.w3.org/">W3C</a></p>
+                    <p><a href="https://www.google.com/">Google</a></p>
+&lt;p>&lt;a href="https://www.w3.org/">W3C&lt;/a>&lt;/p>
+&lt;p>&lt;a href="https://www.google.com/">Google&lt;/a>&lt;/p>
+
+                    
+                    <h2>Relative URLs</h2>
+                    <p><a href="html_images.asp">HTML Images</a></p>
+                    <p><a href="/css/default.asp">CSS Tutorial</a></p>
+&lt;p>&lt;a href="html_images.asp">HTML Images&lt;/a>&lt;/p>
+&lt;p>&lt;a href="/css/default.asp">CSS Tutorial&lt;/a>&lt;/p>
+                </pre>
+            </div> </div>
+
+
+
+        
+        <h2>Links HTML - Use uma imagem como link</h2>
+        <h3>Para usar uma imagem como link, basta colocar a &lt;img> tag dentro da &lt;a>tag:</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">
+                        <img src="/imagens/gatoss.jpg" alt="gatin" style="width:42px;height:42px;">
+                    </a>
+                </pre>
+            </div> </div>
+
+
+
+        <h2>Link para um endereço de e-mail</h2>
+        <h3>Use mailto:dentro do hrefatributo para criar um link que abra o programa de e-mail do usuário (para permitir que ele envie um novo e-mail):</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+<a href="mailto:pllovim@gmail.com">Send email</a>
+                </pre>
+
+            </div> </div>
+
+        <h2>Botão como um link</h2>
+        <h3>Para usar um botão HTML como link, você deve adicionar algum código JavaScript. <br>
+                JavaScript permite especificar o que acontece em determinados eventos, como o clique de um botão:</h3>
+        <div class="container">
+                <div class="editor" contenteditable="false"> 
+                        <pre>
+<button onclick="document.location='default.asp'">HTML Tutorial</button>
+                        </pre>
+                </div> </div>
+
+
+
+        <H2>Títulos de links</H2>
+        <h3>O titleatributo especifica informações extras sobre um elemento. As informações geralmente são mostradas como um texto de dica de ferramenta quando o mouse passa sobre o elemento.</h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+<a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+&lt;a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial&lt;/a>
+                </pre>
+            </div> </div>
+
+
+
+
+        <h2>Mais sobre URLs absolutos e URLs relativos</h2>
+        <h2>Exemplo</h2>
+        <h3>Use um URL completo para vincular a uma página da web: </h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+<a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">HTML tutorial</a>
+&lt;a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">HTML tutorial&lt;/a>
+                </pre>
+            </div> </div>
+
+
+        <h2>Exemplo</h2>
+        <h3>Link para uma página localizada na pasta html do site atual: </h3>
+        <div class="container">
+            <div class="editor" contenteditable="false"> 
+                <pre>
+<a href="/pages/introducao.html">introducao</a>
+&lt;a href="/pages/introducao.html">introducao&lt;/a>
+                </pre>
+            </div> </div>
+
+
+        
+    
     
 </body>
 </html>

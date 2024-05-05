@@ -8,8 +8,8 @@ body, html {
 
   .sidenav {
     overflow-y: auto;
-    z-index: 2000;
-    height: 300vh;
+    z-index: 1000;
+    height: 100vh;
     width: 350px;
     position:sticky;
     top: 0;
@@ -101,7 +101,7 @@ h3{
 }
 
 .editor {
-  min-height: 300px;
+  min-height: 20px;
   border: 1px solid #333333;
   background-color: #1E1E1E;
   color: #CCCCCC;
@@ -124,5 +124,50 @@ h3{
 }
 
 h1{
+  text-align: center;
+}
+
+.heading1{
+  text-align: justify;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  color: white;
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  color: white;
+  background-color: #3b0f0f;
+}
+
+
+.bloco{
+  border: 1px solid white;
+}
+
+.exemplin{
+  background-color: #470606;
+}
+
+.exemplo2{
+  background-color: #470606;
+  width: 300px;
+  margin: auto;
+}
+
+.myImage{
+  justify-content: center;
+}
+
+.tabela1{
   text-align: center;
 }
