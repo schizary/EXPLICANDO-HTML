@@ -17,7 +17,6 @@ O objetivo principal do site é fornecer informações simples e instruções pa
 <h2>Neste capítulo mostraremos alguns exemplos básicos de HTML.</h2>
 
 ![Screenshot_6](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/73a7de02-e006-4b4f-8a8b-841d5f92204d)
-Neste capítulo mostraremos alguns exemplos básicos de HTML.
 
 
 
@@ -31,7 +30,8 @@ Neste capítulo mostraremos alguns exemplos básicos de HTML.
 <h1>💻HTML Attributes!</h1>
 <h2>Neste capítulo mostraremos funcionalidades e atributos HTML</h2>
 
-![Screenshot_10](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/56f28293-f9d8-4ac7-a688-54bb8e081953)
+![Screenshot_9](https://github.com/schizary/EXPLICANDO-HTML/assets/161368632/74b113d0-505d-4419-895f-955cc7e0868a)
+
 
 
 
